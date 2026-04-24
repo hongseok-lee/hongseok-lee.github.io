@@ -1,0 +1,417 @@
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #1a1a1a;
+  background: #fff;
+  line-height: 1.7;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Layout ===== */
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 280px;
+  background: #fafafa;
+  border-right: 1px solid #e5e5e5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 1.5rem;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e5e5e5;
+  margin-bottom: 1.2rem;
+  background: #e5e5e5;
+}
+
+.profile-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
+
+.profile-name-kr {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 0.3rem;
+}
+
+.profile-title {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 0.1rem;
+}
+
+.profile-affiliation {
+  font-size: 0.85rem;
+  color: #777;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Nav */
+.sidebar nav {
+  width: 100%;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.sidebar nav ul li {
+  margin-bottom: 0.2rem;
+}
+
+.sidebar nav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+  background: #e8efff;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* Social links */
+.social-links {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social-links a {
+  color: #555;
+  font-size: 0.8rem;
+  transition: color 0.15s;
+}
+
+.social-links a:hover {
+  color: #2563eb;
+}
+
+/* ===== Main Content ===== */
+.main {
+  margin-left: 280px;
+  padding: 3rem 3.5rem;
+  max-width: 900px;
+  flex: 1;
+}
+
+/* ===== Sections ===== */
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #111;
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+section h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+/* About */
+.about p {
+  margin-bottom: 0.8rem;
+}
+
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.interest-tag {
+  background: #eef2ff;
+  color: #3b5bdb;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Contact */
+.contact-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.4rem 1.2rem;
+  font-size: 0.95rem;
+}
+
+.contact-grid dt {
+  font-weight: 600;
+  color: #555;
+}
+
+.contact-grid dd {
+  color: #333;
+}
+
+/* Timeline items (Education, Positions) */
+.timeline-item {
+  padding-left: 1.2rem;
+  border-left: 2px solid #e5e5e5;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2563eb;
+}
+
+.timeline-item .org {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.timeline-item .role {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.timeline-item .period {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* Publications */
+.pub-category {
+  margin-bottom: 2rem;
+}
+
+.pub-item {
+  margin-bottom: 1.2rem;
+  padding-left: 0.5rem;
+}
+
+.pub-id {
+  font-weight: 700;
+  color: #2563eb;
+  margin-right: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.pub-title {
+  font-weight: 600;
+  color: #111;
+}
+
+.pub-authors {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.15rem;
+}
+
+.pub-authors .me {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.pub-venue {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+.pub-links {
+  margin-top: 0.3rem;
+}
+
+.pub-links a {
+  font-size: 0.8rem;
+  margin-right: 0.8rem;
+  color: #2563eb;
+}
+
+.pub-year {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Patents */
+.patent-item {
+  margin-bottom: 1rem;
+  padding-left: 0.5rem;
+}
+
+.patent-id {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.patent-title {
+  font-weight: 600;
+}
+
+.patent-inventors {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Awards */
+.award-item {
+  margin-bottom: 0.8rem;
+  padding-left: 0.5rem;
+}
+
+.award-name {
+  font-weight: 600;
+}
+
+.award-detail {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Software */
+.software-item {
+  margin-bottom: 1.2rem;
+  padding-left: 0.5rem;
+}
+
+.software-name {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.software-desc {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.2rem;
+}
+
+.software-links {
+  margin-top: 0.3rem;
+}
+
+.software-links a {
+  font-size: 0.85rem;
+  margin-right: 1rem;
+}
+
+/* ===== Mobile Nav Toggle ===== */
+.nav-toggle {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1000;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+    width: 260px;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .main {
+    margin-left: 0;
+    padding: 4rem 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 4rem 1rem 2rem;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e5e5;
+  font-size: 0.8rem;
+  color: #999;
+  text-align: center;
+}

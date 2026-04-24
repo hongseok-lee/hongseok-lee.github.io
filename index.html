@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hongseok Lee</title>
+  <meta name="description" content="Personal website of Hongseok Lee — AI researcher specializing in medical AI, digital pathology, and clinical prognosis.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<button class="nav-toggle" onclick="document.querySelector('.sidebar').classList.toggle('open')" aria-label="Toggle navigation">&#9776;</button>
+
+<div class="wrapper">
+
+  <!-- ===== Sidebar ===== -->
+  <aside class="sidebar">
+    <div class="profile-photo-placeholder" style="width:150px;height:150px;border-radius:50%;background:#dde4f0;display:flex;align-items:center;justify-content:center;font-size:2.5rem;color:#7b8db8;margin-bottom:1.2rem;border:3px solid #e5e5e5;">HL</div>
+    <div class="profile-name">Hongseok Lee</div>
+    <div class="profile-name-kr">이홍석</div>
+    <div class="profile-title">AI Research Lead</div>
+    <div class="profile-affiliation">Madup Inc.</div>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#positions">Positions</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#patents">Patents</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#software">Software</a></li>
+      </ul>
+    </nav>
+
+    <div class="social-links">
+      <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">Google Scholar</a>
+      <a href="https://github.com/hongseok-lee" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/hongseok-lee" target="_blank">LinkedIn</a>
+    </div>
+  </aside>
+
+  <!-- ===== Main Content ===== -->
+  <main class="main">
+
+    <!-- About -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I am an AI Research Lead at <strong>Madup Inc.</strong>, where I lead a team of AI engineers developing and deploying machine learning systems.
+        Previously, I served as a Principal AI Researcher at <strong>Seoul National University Hospital (SNUH)</strong> and as a Project Lead at <strong>VUNO Inc.</strong>,
+        where I developed deep learning systems for medical image analysis, clinical prognosis, and computer-aided diagnosis.
+      </p>
+      <p>
+        I hold a <strong>Doctor of Veterinary Medicine (DVM)</strong> and a <strong>Master's degree</strong> from <strong>Seoul National University</strong>,
+        with my graduate research focused on image-based machine learning for disease diagnosis.
+        This dual training in veterinary medicine and computer science drives my interdisciplinary approach to medical AI.
+      </p>
+      <p>
+        My research has been published in top venues including <em>Nature Medicine</em>, <em>American Journal of Respiratory and Critical Care Medicine</em>,
+        <em>NeurIPS</em>, and <em>Radiology: Artificial Intelligence</em>, with over 1,100 citations.
+      </p>
+
+      <h3>Research Interests</h3>
+      <div class="interests">
+        <span class="interest-tag">Interpretable Medical AI</span>
+        <span class="interest-tag">Attention-based Deep Learning</span>
+        <span class="interest-tag">Clinical Prognosis Prediction</span>
+        <span class="interest-tag">Digital Pathology</span>
+        <span class="interest-tag">Computer-aided Diagnosis</span>
+        <span class="interest-tag">Survival Analysis</span>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <dl class="contact-grid">
+        <dt>Email</dt>
+        <dd><a href="mailto:hslee.devet@gmail.com">hslee.devet@gmail.com</a></dd>
+        <dt>Website</dt>
+        <dd><a href="https://leehongseok.com">leehongseok.com</a></dd>
+        <dt>Google Scholar</dt>
+        <dd><a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank">Hongseok Lee</a></dd>
+        <dt>GitHub</dt>
+        <dd><a href="https://github.com/hongseok-lee" target="_blank">hongseok-lee</a></dd>
+      </dl>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2>Education</h2>
+
+      <div class="timeline-item">
+        <div class="org">Seoul National University</div>
+        <div class="role">M.S., College of Veterinary Medicine</div>
+        <div class="role" style="font-size:0.85rem;color:#777;">Thesis: Diagnosis of swine lung lesion through image-based machine learning</div>
+        <div class="period">2018</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="org">Seoul National University</div>
+        <div class="role">Doctor of Veterinary Medicine (DVM)</div>
+        <div class="period">2017</div>
+      </div>
+    </section>
+
+    <!-- Positions -->
+    <section id="positions">
+      <h2>Positions</h2>
+
+      <div class="timeline-item">
+        <div class="org">Madup Inc.</div>
+        <div class="role">AI Research Lead</div>
+        <div class="period">Jul 2025 &ndash; Present</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="org">Seoul National University Hospital</div>
+        <div class="role">Principal AI Researcher</div>
+        <div class="period">Feb 2024 &ndash; Jul 2025</div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="org">VUNO Inc.</div>
+        <div class="role">Project Lead, Prognosis AI</div>
+        <div class="period">May 2019 &ndash; Feb 2024</div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications">
+      <h2>Publications</h2>
+
+      <!-- Journal Articles -->
+      <div class="pub-category">
+        <h3>Journal Articles</h3>
+
+        <div class="pub-item">
+          <span class="pub-id">[J9]</span>
+          <span class="pub-title">Accelerated Aging and Aging Velocity from Deep Learning&ndash;based Chest Radiograph&ndash;derived Age for Predicting Cause-specific Mortality</span>
+          <div class="pub-authors">Y Chang, H Kim, S Lee, <span class="me">H Lee</span>, SH Yoon, S Ryu</div>
+          <div class="pub-venue">Radiology: Artificial Intelligence, e250609, 2026</div>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-id">[J8]</span>
+          <span class="pub-title">Standalone Prognostication of Idiopathic Pulmonary Fibrosis Using Attention-Based Deep Learning</span>
+          <div class="pub-authors">JH Lee, KJ Chae, <span class="me">HS Lee</span>, J Park, SM Choi, JM Goo, H Kim</div>
+          <div class="pub-venue">American Journal of Respiratory and Critical Care Medicine, aamag098, 2026</div>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-id">[J7]</span>
+          <span class="pub-title">Artificial intelligence for diagnosis and Gleason grading of prostate cancer: the PANDA challenge</span>
+          <div class="pub-authors">W Bulten, K Kartasalo, PHC Chen, P Str&ouml;m, H Pinckaers, K Nagpal, Y Cai, ...</div>
+          <div class="pub-venue">Nature Medicine 28 (1), 154&ndash;163, 2022</div>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-id">[J6]</span>
+          <span class="pub-title">DeNTNet: Deep Neural Transfer Network for the detection of periodontal bone loss using panoramic dental radiographs</span>
+          <div class="pub-authors">J Kim, <span class="me">HS Lee</span>, IS Song, KH Jung</div>
+          <div class="pub-venue">Scientific Reports 9 (1), 1&ndash;9, 2019</div>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-id">[J5]</span>
+          <span class="pub-title">Evaluation of a human glycated hemoglobin test in canine diabetes mellitus</span>
+          <div class="pub-authors">NY Kim, J An, JK Jeong, S Ji, SH Hwang, <span class="me">HS Lee</span>, MC Kim, HW Kim, ...</div>
+          <div class="pub-venue">Journal of Veterinary Diagnostic Investigation 31 (3), 408&ndash;414, 2019</div>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-id">[J4]</span>
+          <span class="pub-title">Hypoxia promotes acquisition of aggressive phenotypes in human malignant mesothelioma</span>
+          <div class="pub-authors">MC Kim, SH Hwang, NY Kim, <span class="me">HS Lee</span>, S Ji, Y Yang, Y Kim</div>
+          <div class="pub-venue">BMC Cancer 18 (1), 819, 2018</div>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-id">[J3]</span>
+          <span class="pub-title">Integrated analysis of microRNA and mRNA expressions in peripheral blood leukocytes of Warmblood horses before and after exercise</span>
+          <div class="pub-authors">HA Kim, MC Kim, NY Kim, DY Ryu, <span class="me">HS Lee</span>, Y Kim</div>
+          <div class="pub-venue">Journal of Veterinary Science 19 (1), 99&ndash;106, 2018</div>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-id">[J2]</span>
+          <span class="pub-title">Trauma-associated hyperglycemia after fall accident in three dogs</span>
+          <div class="pub-authors">S Ji, NY Kim, MC Kim, <span class="me">HS Lee</span>, SH Hwang, Y Kim</div>
+          <div class="pub-venue">Journal of Veterinary Clinics 35 (2), 67&ndash;69, 2018</div>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-id">[J1]</span>
+          <span class="pub-title">Evaluation of the correlation between gross lung score and microscopic diagnosis for swine pneumonia in Korean slaughterhouses</span>
+          <div class="pub-authors"><span class="me">HS Lee</span>, MC Kim, NY Kim, SH Hwang, S Ji, YK Park, YH Park, Y Kim</div>
+          <div class="pub-venue">Korean Journal of Veterinary Research 57 (4), 227&ndash;233, 2017</div>
+        </div>
+      </div>
+
+      <!-- Conference Papers -->
+      <div class="pub-category">
+        <h3>Conference Papers</h3>
+
+        <div class="pub-item">
+          <span class="pub-id">[C3]</span>
+          <span class="pub-title">A neural pre-conditioning active learning algorithm to reduce label complexity</span>
+          <div class="pub-authors">ST Kong, S Jeon, D Na, J Lee, <span class="me">HS Lee</span>, KH Jung</div>
+          <div class="pub-venue">Advances in Neural Information Processing Systems (NeurIPS) 35, 32842&ndash;32853, 2022</div>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-id">[C2]</span>
+          <span class="pub-title">Abstraction in Pixel-wise Noisy Annotations Can Guide Attention to Improve Prostate Cancer Grade Assessment</span>
+          <div class="pub-authors">H Kim, ST Kong, <span class="me">H Lee</span>, K Kim, KH Jung</div>
+          <div class="pub-venue">Workshop on Medical Image Learning with Limited and Noisy Data (MILLanD), 23&ndash;31, 2022</div>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-id">[C1]</span>
+          <span class="pub-title">PopEval: A Character-Level Approach to End-to-End Evaluation Compatible with Word-Level Benchmark Dataset</span>
+          <div class="pub-authors"><span class="me">HS Lee</span>, Y Yoon, PH Jang, C Choi</div>
+          <div class="pub-venue">International Conference on Document Analysis and Recognition (ICDAR), 2019</div>
+        </div>
+      </div>
+
+      <!-- Abstracts -->
+      <div class="pub-category">
+        <h3>Conference Abstracts</h3>
+
+        <div class="pub-item">
+          <span class="pub-id">[A2]</span>
+          <span class="pub-title">Spatial distribution of immune cells as quantitative prognosis indicator in hepatocellular carcinoma</span>
+          <div class="pub-authors"><span class="me">H Lee</span>, K Kim, G Kang, KH Jung, SS Lee</div>
+          <div class="pub-venue">Cancer Research 82 (12_Supplement), 1721&ndash;1721 (AACR), 2022</div>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-id">[A1]</span>
+          <span class="pub-title">Development of Slide Scan System Using Smart Phone</span>
+          <div class="pub-authors"><span class="me">HS Lee</span>, SH Hwang, Y Yang, Y Jeong, Y Kim</div>
+          <div class="pub-venue">Korean Journal of Veterinary Clinical Medicine 36 (1), 18&ndash;18, 2019</div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Patents -->
+    <section id="patents">
+      <h2>Patents</h2>
+
+      <h3>United States</h3>
+
+      <div class="patent-item">
+        <div class="patent-title">Method for Measuring Lesion of Medical Image</div>
+        <div class="patent-inventors">YW Kim, K Kim, <strong>HS Lee</strong>, HS Kim</div>
+        <div class="patent-id">US 12,236,585 B2 &middot; Feb 2025</div>
+      </div>
+
+      <div class="patent-item">
+        <div class="patent-title">Method for Converting Part of Dental Image</div>
+        <div class="patent-inventors">SH Kim, JY Kim, <strong>HS Lee</strong></div>
+        <div class="patent-id">US 12,544,189 B2 &middot; 2026</div>
+      </div>
+
+      <h3>Republic of Korea</h3>
+
+      <div class="patent-item">
+        <div class="patent-title">Dataset Construction Method</div>
+        <div class="patent-id">KR 10-2501793-0000 &middot; 2023</div>
+      </div>
+
+      <div class="patent-item">
+        <div class="patent-title">Method for Providing Dental Lesion Information</div>
+        <div class="patent-id">KR 10-2186709-0000 &middot; 2020</div>
+      </div>
+
+      <div class="patent-item">
+        <div class="patent-title">Method for Converting Part of Dental Image</div>
+        <div class="patent-id">KR 10-2448395-0000 &middot; 2022</div>
+      </div>
+    </section>
+
+    <!-- Awards -->
+    <section id="awards">
+      <h2>Awards</h2>
+
+      <div class="award-item">
+        <div class="award-name">Kaggle PANDA Challenge &mdash; Gold Medal</div>
+        <div class="award-detail">Top 1% (out of 1,010 teams) &middot; Prostate cANcer graDe Assessment &middot; 2020</div>
+      </div>
+
+      <div class="award-item">
+        <div class="award-name">ERD Day Research Presentation Award</div>
+        <div class="award-detail">Seoul National University, College of Veterinary Medicine</div>
+      </div>
+    </section>
+
+    <!-- Software -->
+    <section id="software">
+      <h2>Software</h2>
+
+      <div class="software-item">
+        <div class="software-name">ORACLE-IPF</div>
+        <div class="software-desc">Attention-based deep learning model for standalone prognostication of idiopathic pulmonary fibrosis from chest CT. Released as an ensemble of 5 checkpoints.</div>
+        <div class="software-links">
+          <a href="https://huggingface.co/" target="_blank">HuggingFace</a>
+        </div>
+      </div>
+
+      <div class="software-item">
+        <div class="software-name">PopEval</div>
+        <div class="software-desc">Character-level OCR evaluation algorithm. Adopted by NAVER Corporation as an internal evaluation tool for their OCR systems.</div>
+        <div class="software-links">
+          <a href="https://github.com/naver/popeval" target="_blank">GitHub (NAVER)</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2026 Hongseok Lee. All rights reserved.
+    </footer>
+
+  </main>
+</div>
+
+<script>
+// Close sidebar on link click (mobile)
+document.querySelectorAll('.sidebar nav a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.sidebar').classList.remove('open');
+  });
+});
+</script>
+
+</body>
+</html>
